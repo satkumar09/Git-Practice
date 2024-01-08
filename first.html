@@ -10,4 +10,99 @@
 </body>
 </html>
 
-<!-- Terminal cammands: -->
+<!-- 
+  Terminal cammands: 
+   PS C:\Users\VComply\Desktop\Web development\Git-GitHub>
+  PS C:\Users\VComply\Desktop\Web development\Git-GitHub\Git-Practice> git status          //To check status of the current changes in file
+        app.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\VComply\Desktop\Web development\Git-GitHub\Git-Practice> git remote -v         //To verify remote
+origin  https://github.com/satkumar09/Git-Practice.git (fetch)
+origin  https://github.com/satkumar09/Git-Practice.git (push)
+PS C:\Users\VComply\Desktop\Web development\Git-GitHub\Git-Practice> git branch            //To check branch
+* main
+PS C:\Users\VComply\Desktop\Web development\Git-GitHub\Git-Practice> git branch -M main    //To change branch name (mine was already main, so no change)
+PS C:\Users\VComply\Desktop\Web development\Git-GitHub\Git-Practice> git branch
+* main
+PS C:\Users\VComply\Desktop\Web development\Git-GitHub\Git-Practice> git push origin main   //To push changes into github (didn't work here as user was still not authenticated at this moment)
+fatal: User cancelled dialog.
+PS C:\Users\VComply\Desktop\Web development\Git-GitHub\Git-Practice> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+        modified:   first.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        app.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\VComply\Desktop\Web development\Git-GitHub\Git-Practice> git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+PS C:\Users\VComply\Desktop\Web development\Git-GitHub\Git-Practice> git add .
+PS C:\Users\VComply\Desktop\Web development\Git-GitHub\Git-Practice> git commit -m "App.js added"   //as it still shows author identity still unknown
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"                                           //will globally configure the given user with the system
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.                                   //as I did 
+
+fatal: unable to auto-detect email address (got 'VComply@E-power.(none)')
+PS C:\Users\VComply\Desktop\Web development\Git-GitHub\Git-Practice> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   app.js
+        modified:   first.html
+
+PS C:\Users\VComply\Desktop\Web development\Git-GitHub\Git-Practice> git push origin main
+info: please complete authentication in your browser...                                                                            //failed to push 
+Everything up-to-date
+PS C:\Users\VComply\Desktop\Web development\Git-GitHub\Git-Practice> git push origin main
+Everything up-to-date
+PS C:\Users\VComply\Desktop\Web development\Git-GitHub\Git-Practice> git push 
+Everything up-to-date
+PS C:\Users\VComply\Desktop\Web development\Git-GitHub\Git-Practice> git config user.email "satkumar2929@gmail.com"                //locally configure the given user with the directory
+PS C:\Users\VComply\Desktop\Web development\Git-GitHub\Git-Practice> git config user.name "satkumar09"         
+PS C:\Users\VComply\Desktop\Web development\Git-GitHub\Git-Practice> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   app.js
+        modified:   first.html
+
+PS C:\Users\VComply\Desktop\Web development\Git-GitHub\Git-Practice> git commit -m "some msg"                            //now successfully commited
+[main 2247c81] some msg
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+[main 2247c81] some msg
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 369 bytes | 369.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/satkumar09/Git-Practice.git
+   6842383..2247c81  main -> main
+PS C:\Users\VComply\Desktop\Web development\Git-GitHub\Gigit config user.name                       //will show the current local user name
+satkumar09
+PS C:\Users\VComply\Desktop\Web development\Git-GitHub\Git-Practice> git config user.email          //will show the current local user email
+satkumar2929@gmail.com
+PS C:\Users\VComply\Desktop\Web development\Git-GitHub\Git-Practice>
+-->
